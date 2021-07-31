@@ -45,7 +45,7 @@ app.get("/api/notes", (req, res) => {
 
     const newNote = req.body;
     newNote.id = (notesArray.length).toString(); // creates unique ID for each note
-    notesArray.push(note);
+    notesArray.push(newNote);
 
     fs.writeFile(notes, JSON.stringify(notesArray), (err) => { 
         if(err) console.log("Error");
