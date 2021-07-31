@@ -16,7 +16,7 @@ const app = express();
 app.use(express.static('public'));
 
 // parse incoming data for server to accept POSt request
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 
 // PARSE incoming JSON
 app.use(express.json());
@@ -29,10 +29,15 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
-// SERVES ROUTE TO ANIMALS.HTML
-app.get('/notes' (req, res) => {
-    res.sendFile()
-})
+// SERVES ROUTE TO NOTES.HTML
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/notes.html'));
+});
+
+// WILDCARD ROUTE
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
 
 // listen() on server
 app.listen(PORT, () => {
