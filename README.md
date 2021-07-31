@@ -13,8 +13,5 @@ You can also access the repo on Heroku: [https://fierce-ridge-88658.herokuapp.co
 ## Contributing
 Ryan Jolley 2021
 
-## Demo 
-
-
 ## In-Progress
 Adding functionality to delete notes. 
