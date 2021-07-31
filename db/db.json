@@ -1,13 +1,13 @@
 [
     {
-        "title":"Test0 title",
-        "text":"Test0 text",
+        "title":"Sample Note 1",
+        "text":"Sample Description",
         "id": "0"
     },
 
     {
-        "title":"Test1 title",
-        "text":"Test2 text",
+        "title":"Sample Note 2",
+        "text":"Sample Description 2",
         "id": "1"
     }
 ]
