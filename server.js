@@ -53,6 +53,12 @@ app.get("/api/notes", (req, res) => {
     res.json(notesArray);
 })
 
+// app.delete("/api/notes", (req, res) => {
+//     console.log(req);
+//     console.log(req.body);
+
+// })
+
 // listen() on server
 app.listen(PORT, () => {
     console.log(`API server is now on port ${PORT}`);
