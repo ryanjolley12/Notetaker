@@ -1,6 +1,3 @@
-const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
-
 // fs library and Node API path
 const fs = require('fs');
 const path = require('path');
@@ -21,6 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 // PARSE incoming JSON
 app.use(express.json());
 
+const notesArray = [];
+
 // ----------------------------------------------------------------------------------
 // GET routes
 
@@ -38,6 +37,21 @@ app.get('/notes', (req, res) => {
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
+
+// API GET
+app.get("/api/notes", (req, res) => {
+    console.log(req);
+    console.log(req.body);
+
+    const newNote = req.body;
+    newNote.id = (notesArray.length).toString(); // creates unique ID for each note
+    notesArray.push(note);
+
+    fs.writeFile(notes, JSON.stringify(notesArray), (err) => { 
+        if(err) console.log("Error");
+    })
+    res.json(notesArray);
+})
 
 // listen() on server
 app.listen(PORT, () => {
