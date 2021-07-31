@@ -43,13 +43,11 @@ app.post("/api/notes", (req, res) => {
     res.json(newNote);
 });
 
+// function deleteById(id, notes) {
+//     const deleted = notes.$(id).removeData(notes);(notes => notes.id === id)[0];
+//     return deleted;
+//   }
 
-function deleteById(id, notes) {
-    const deleted = notes.$(id).removeData(notes);(notes => notes.id === id)[0];
-    return deleted;
-  }
-
-  module.exports = deleteById;
 
 // WILDCARD ROUTE
 app.get("*", (req, res) => {
