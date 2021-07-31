@@ -8,7 +8,7 @@ Install Express using 'npm i express'. Open the repository in an external termin
 
 ## Usage
 Clone or fork this repository and then run the command 'npm start' in your external terminal.
-You can also access the repo on Heroku: [https://fierce-ridge-88658.herokuapp.com/]
+You can also access the repo on Heroku: https://fierce-ridge-88658.herokuapp.com/
 
 ## Contributing
 Ryan Jolley 2021
