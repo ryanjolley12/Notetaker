@@ -17,4 +17,6 @@ Ryan Jolley 2021
 Adding functionality to delete notes. 
 
 ## Demo
-https://drive.google.com/file/d/1H-m0ezoDS_F_GGdFfJgNQVpJEoTmjZuK/view
+
+https://user-images.githubusercontent.com/83616082/127743742-f8350090-13ae-477b-856e-1828c313fabe.mp4
+
